@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<div class="bg-white pt-10 pb-21"></div>
+<div class="bg-light pt-10 pb-21"></div>
 <div class="container-fluid mt-n22 px-6">
     <div class="row">
         <div class="col-xl-3 col-lg-4 col-md-12 col-12">
