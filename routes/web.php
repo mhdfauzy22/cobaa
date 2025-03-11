@@ -16,10 +16,12 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
+    // Data User
     Route::get('/users', [DatauserController::class, 'index'])->name('users.index');
     Route::post('/users', [DatauserController::class, 'store'])->name('users.store');
     Route::put('/users/{id}', [DatauserController::class, 'update'])->name('users.update');
     Route::delete('/users/{id}', [DatauserController::class, 'destroy'])->name('users.destroy');
+
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

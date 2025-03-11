@@ -3,8 +3,9 @@
     <div class="nav-scroller">
         <!-- Brand logo -->
         <a class="navbar-brand" href="{{ route('dashboard') }}">
-            <img src="{{ asset('assets/images/brand/logo/logo.svg') }}" alt="" />
+            <span style="font-size: 24px; font-weight: bold; color: white;">Boson-POS</span>
         </a>
+
         <!-- Navbar nav -->
         <ul class="navbar-nav flex-column" id="sideNavbar">
             <li class="nav-item">
