@@ -20,6 +20,10 @@ class DatauserController extends Controller
         return view('masteradmin.index', compact('users', 'roles'));
     }
 
+    public function uploaddata(){
+        return view('masteradmin.upload_data');
+    }
+
     public function store(Request $request)
     {
         $request->validate([
@@ -37,7 +41,12 @@ class DatauserController extends Controller
 
         $user->assignRole($request->role);
 
-        return back()->with('success', 'User has been successfully added.');
+        dd($user);
+
+        
+
+
+        // return back()->with('success', 'User has been successfully added.');
     }
 
     public function update(Request $request, $id)
