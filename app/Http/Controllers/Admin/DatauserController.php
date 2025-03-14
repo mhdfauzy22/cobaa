@@ -30,7 +30,7 @@ class DatauserController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|email|unique:users',
             'password' => 'required|min:6|confirmed',
-            'role' => 'required'
+            // 'role' => 'required'
         ]);
 
         $user = User::create([
@@ -39,10 +39,9 @@ class DatauserController extends Controller
             'password' => Hash::make($request->password),
         ]);
 
-        $user->assignRole($request->role);
+        // $user->assignRole($request->role);
 
-        dd($user);
-
+        return dd($user);
         
 
 
